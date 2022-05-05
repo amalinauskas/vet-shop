@@ -1,0 +1,215 @@
+/* colors {
+  color: #68a7ad;
+  color: #99c4c8;
+  color: #e5cb9f;
+  color: #eee4ab;
+} */
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Top nav ================================================================= */
+
+.topnav {
+  overflow: hidden;
+  background-color: #68a7ad;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  /* top: 0; */
+  width: 100%;
+  align-items: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  color: #000000;
+}
+
+.nopNavLinks a {
+  font-size: 22px;
+}
+
+.topNavHomeLogo a {
+  font-size: 44px;
+}
+
+.topNavHomeLogo a:hover {
+  text-shadow: -2px -2px #add8e6, -2px -1.5px #add8e6, -2px -1px #add8e6,
+    -2px -0.5px #add8e6, -2px 0px #add8e6, -2px 0.5px #add8e6, -2px 1px #add8e6,
+    -2px 1.5px #add8e6, -2px 2px #add8e6, -1.5px 2px #add8e6, -1px 2px #add8e6,
+    -0.5px 2px #add8e6, 0px 2px #add8e6, 0.5px 2px #add8e6, 1px 2px #add8e6,
+    1.5px 2px #add8e6, 2px 2px #add8e6, 2px 1.5px #add8e6, 2px 1px #add8e6,
+    2px 0.5px #add8e6, 2px 0px #add8e6, 2px -0.5px #add8e6, 2px -1px #add8e6,
+    2px -1.5px #add8e6, 2px -2px #add8e6, 1.5px -2px #add8e6, 1px -2px #add8e6,
+    0.5px -2px #add8e6, 0px -2px #add8e6, -0.5px -2px #add8e6, -1px -2px #add8e6,
+    -1.5px -2px #add8e6;
+}
+
+/* Name & Add pet button ================================================================= */
+
+.nameAndPetContainer {
+  display: flex;
+}
+
+.namePetAddButton {
+  height: 250px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.petListName {
+  font-size: 44px;
+}
+
+.addPetBtn {
+  background-color: #e5cb9f;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  border-radius: 10px;
+}
+
+.addPetBtn:hover {
+  background-color: #eee4ab;
+  color: #000000;
+}
+
+/* Pets list container ================================================================= */
+
+.mainContainer {
+  display: flex;
+}
+
+.petsListContainer {
+  width: 60%;
+  /* background-color: red; */
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.emptySpace {
+  width: 20%;
+  /* background-color: green; */
+  /* height: 10vh; */
+}
+
+/* Pet card ================================================================= */
+
+.petCard {
+  min-width: 30%;
+  height: 300px;
+  border: 1px solid #747474;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.viewLogBtn {
+  background-color: #e5cb9f;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  border: 1px solid #e5cb9f;
+  border-radius: 10px;
+}
+
+.viewLogBtn:hover {
+  background-color: #eee4ab;
+  color: #000000;
+  border: 1px solid #eee4ab;
+}
+
+.deleteBtn {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #e5cb9f;
+  border-radius: 10px;
+}
+
+.deleteBtn:hover {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+/* LOG PAGE */
+
+/* Name & double button */
+
+.doubleBtn {
+  display: flex;
+  gap: 5px;
+}
+
+.addPrescriptionBtn,
+.addLogBtn {
+  background-color: #e5cb9f;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  border-radius: 10px;
+}
+
+.addPrescriptionBtn:hover,
+.addLogBtn:hover {
+  background-color: #eee4ab;
+  color: #000000;
+}
+
+/* Log cards */
+
+.logCard {
+  min-width: 30%;
+  height: 300px;
+  border: 1px solid #747474;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
