@@ -1,6 +1,6 @@
 # Vet shop website 😽 (alpha version 0.1)
 
-📋 Website for You to track your pet visits to the vet. 
+📋 Mobile friendly website for You to track your pet visits to the vet. 
 
 ✅ Registration/login form.
 
