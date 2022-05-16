@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e647699cb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
+    <title>Logs</title>
+  </head>
+  <body>
+    <!-- NAV -->
+    <header>
+      <div class="container">
+        <div id="topNav">
+          <h1>
+            <i class="fa-solid fa-shield-dog"></i>
+            <span class="highlight">CareBee </span
+            ><i class="fa-solid fa-shield-cat"></i>
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <!-- <li><a href="home.html">Pets</a></li> -->
+            <li><a href="home.html">Heroes</a></li>
+            <li><a href="add.html">Add log</a></li>
+
+            <button id="logout">Logout</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Log Table -->
+    <section>
+      <div class="container">
+        <h1>Your pet info:</h1>
+      </div>
+      <div class="container">
+        <table id="tableCss">
+          <thead>
+            <tr>
+              <th>Meds ID</th>
+              <th>Prescription</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th>Expiry date</th>
+              <th>CHIP ID</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="src\stats.js"></script>
+  </body>
+</html>
