@@ -8,6 +8,6 @@
 
 👨🏼‍⚕️ Veterinarians contacts from fetched data from a database. 
 
-🔧 Upcoming updates: • Delete your data from review page. • Mobile friendly tables.
+🔧 Upcoming updates: • Delete your data from review page. • Mobile friendly tables. • Display message if there is no data.
 
 Back-end code: https://github.com/amalinauskas/vet-shop-backend
