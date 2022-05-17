@@ -1,0 +1,293 @@
+colors {
+  color: #f38181;
+  color: #fce38a;
+  color: #eaffd0;
+  color: #95e1d3;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Global */
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+
+/* Header */
+
+header {
+  background: #f38181;
+  border-bottom: #95e1d3 3px solid;
+  color: #95e1d3;
+  min-height: 70px;
+  padding-top: 30px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+header li {
+  display: inline;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+header #topNav {
+  float: left;
+}
+
+header #topNav h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #000;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #95e1d3;
+}
+
+#logout {
+  background-color: #000;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#logout:hover {
+  background-color: #95e1d3;
+  border-radius: 5px;
+  color: #000;
+}
+
+/* Login/Register Form */
+
+#loginForm {
+  color: #000000;
+  text-align: center;
+}
+
+#loginForm h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.control {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.control textarea:focus,
+.control input:focus {
+  outline: none;
+}
+
+.control input {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  border: 0;
+  border-bottom: 0.125rem solid #000000;
+}
+
+.control input::placeholder {
+  color: #00000033;
+  text-align: center;
+}
+
+.control .btn {
+  background: #f38181;
+  border-radius: 10px;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 1rem 1.75rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.control .btn:hover {
+  background: #95e1d3;
+  color: #000000;
+}
+
+/* Tables */
+
+#tableCss {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tableCss td,
+#tableCss th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableCss tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tableCss tr:hover {
+  background-color: #ddd;
+}
+
+#tableCss th {
+  background-color: #f38181;
+  color: white;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+#tableCss tr {
+  text-align: center;
+}
+
+#emptyMessage {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+#emptyMessage span {
+  color: #f38181;
+}
+
+/* Media ======================================================== */
+
+@media (max-width: 768px) {
+  header #topNav,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-top: 20px;
+  }
+  #loginForm h1,
+  #indexForm h1 {
+    margin-top: 40px;
+  }
+  /* table */
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+  }
+
+  #tableCss tr {
+    text-align: right;
+  }
+  #tableCss td,
+  #tableCss th {
+    padding: 0px;
+  }
+
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Meds ID";
+  }
+  td:nth-of-type(2):before {
+    content: "Prescription";
+  }
+  td:nth-of-type(3):before {
+    content: "Description";
+  }
+  td:nth-of-type(4):before {
+    content: "Date";
+  }
+  td:nth-of-type(5):before {
+    content: "Expiry date";
+  }
+  td:nth-of-type(6):before {
+    content: "CHIP ID";
+  }
+
+  .mobileTable td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .mobileTable td:nth-of-type(2):before {
+    content: "Working hours";
+  }
+  .mobileTable td:nth-of-type(3):before {
+    content: "Type of specialty";
+  }
+  .mobileTable td:nth-of-type(4):before {
+    content: "Telephone number";
+  }
+
+  tr:nth-child(1) td:nth-child(3) {
+    font-size: 12px;
+  }
+  tr:nth-child(2) td:nth-child(3) {
+    font-size: 12px;
+  }
+  tr:nth-child(3) td:nth-child(3) {
+    font-size: 12px;
+  }
+  tr:nth-child(4) td:nth-child(3) {
+    font-size: 12px;
+  }
+  tr:nth-child(5) td:nth-child(3) {
+    font-size: 12px;
+  }
+}
